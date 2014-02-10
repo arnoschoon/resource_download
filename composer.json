@@ -1,0 +1,7 @@
+{
+	"name": "arnoschoon/resource_download",
+	"type": "typo3cms-extension",
+	"require": {
+		"lw/typo3cms-installers": "*"
+	}
+}
