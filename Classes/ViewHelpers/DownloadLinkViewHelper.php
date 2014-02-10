@@ -64,7 +64,7 @@ class DownloadLinkViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTa
 		)));
 
 		$uri = sprintf(
-			'?eID=%s&resource=%d&seal=%s',
+			'/?eID=%s&resource=%d&seal=%s',
 			'resource_download',
 			$originalResource->getUid(),
 			$seal
