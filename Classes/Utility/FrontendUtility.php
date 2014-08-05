@@ -25,6 +25,11 @@ namespace ArnoSchoon\ResourceDownload\Utility;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+/**
+ * Class FrontendUtility
+ *
+ * @package ArnoSchoon\ResourceDownload\Utility
+ */
 class FrontendUtility {
 
 	/**
@@ -49,7 +54,6 @@ class FrontendUtility {
 		$tsfe->initFEuser();
 		$tsfe->determineId();
 
-
 		if (!isset($GLOBALS['TCA']['pages'])) {
 			\TYPO3\CMS\Core\Core\Bootstrap::getInstance()->loadCachedTca();
 		}
@@ -70,4 +74,5 @@ class FrontendUtility {
 		$GLOBALS['TSFE'] = self::$tsfeBackup;
 	}
 
-} 
+}
+?>

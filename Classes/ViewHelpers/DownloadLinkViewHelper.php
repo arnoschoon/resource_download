@@ -25,6 +25,11 @@ namespace ArnoSchoon\ResourceDownload\ViewHelpers;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+/**
+ * Class DownloadLinkViewHelper
+ *
+ * @package ArnoSchoon\ResourceDownload\ViewHelpers
+ */
 class DownloadLinkViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper {
 
 	/**
@@ -77,4 +82,5 @@ class DownloadLinkViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTa
 		return $this->tag->render();
 	}
 
-} 
+}
+?>

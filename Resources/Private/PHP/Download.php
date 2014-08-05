@@ -32,11 +32,12 @@ if ($file instanceof \TYPO3\CMS\Core\Resource\File) {
 	header('Content-Type: ' . $file->getMimeType());
 	header('Content-length: ' . $file->getSize());
 	header('Content-Disposition: attachment; filename=' . $file->getName());
-	header("Content-Description: File Transfer");
-	header("Content-Transfer-Encoding: binary");
+	header('Content-Description: File Transfer');
+	header('Content-Transfer-Encoding: binary');
 	readfile($file->getForLocalProcessing(FALSE));
 } else {
 	header(\TYPO3\CMS\Core\Utility\HttpUtility::HTTP_STATUS_404);
 }
 
 \ArnoSchoon\ResourceDownload\Utility\FrontendUtility::stopSimulation();
+?>
